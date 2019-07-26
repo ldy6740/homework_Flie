@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>주문페이지</title>
+    <link href="{{ url_for('static',filename='style/subdefault.css') }}" rel="stylesheet" type="text/css" />
+    <!-- <link href="../static/style/subdefault.css" rel="stylesheet" type="text/css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="{{ url_for('static',filename='script.js') }}"></script>
+</head>
+<body style="background:#fff;">
+   
+   <header>
+       <div id="header-wrapper">
+           <div class="sub_top_img">
+               <div class="bg_img1 bg_position"><img src="{{ url_for('static',filename='images/header-bg.jpg') }}"></div>
+           </div>
+       </div>
+       
+<div id="header" class="container">
+    <div id="logo">
+        <h1><a href="#">Assembly</a></h1>
+    </div>
+    
+    <div id="menu">
+        <ul>
+            <li class="active"><a href="#" accesskey="1" title="">Homepage</a></li>
+            <li><a href="#" accesskey="2" title="">Our Clients</a></li>
+            <li><a href="#" accesskey="3" title="">About Us</a></li>
+            <li><a href="#" accesskey="4" title="">Careers</a></li>
+            <li><a href="#" accesskey="5" title="">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+  
+   </header>
+   
+   <section>
+      <div class="inner">
+           <div class="item_img">
+             <img src="http://i.011st.com/ex_t/R/400x400/1/85/0/src/an/6/1/0/2/5/5/1533610255_B.jpg" alt="item_img">
+           </div>
+
+           <div class="item_txt">
+               <ul class="item_title"> <h3>핸드 청소기 <span>45,000원</span></h3>
+                   <li><p>차량용 핸드 청소기 작은 사이즈로 뵤관이 간편하고 세련된 디자인으로 <br>차량 속 인테리어까지 생각한 청소기 입니다.</p></li>
+               </ul>
+               <form>
+                   <ul class="item_info">
+                       <li>
+                            <laber for="name_give">이름 :</laber>
+                            <input type="text" name="name_give" id="name_give" placeholder="이름을 입력해주세요">
+
+                       </li>
+
+                       <li>
+                          <laber for="quantity_give">수량 :</laber>
+                           <select name="quantity_give" id="quantity_give">
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                               <option value="3">3</option>
+                               <option value="4">4</option>
+                               <option value="5">5</option>
+                               <option value="6">6</option>
+                               <option value="7">7</option>
+                               <option value="8">8</option>
+                               <option value="9">9</option>
+                               <option value="10">10</option>
+                           </select>
+                       </li>
+                       <li>
+                           <laber for="address_give">주소 :</laber>
+                           <input type="text" id="address_give" name="address_give">
+                           <button>검색</button>
+                       </li>
+                        <li>
+                           <laber for="phone_give">전화번호 :</laber>
+                           <input type="number" name="phone_give" id="phone_give">
+                        </li>
+
+                   </ul>  
+
+                   <button type="button" class="btn" onclick="posting();">주문하기</button>              
+               </form>
+              </div>
+          </div>
+   </section> 
+    
+</body>
+</html>

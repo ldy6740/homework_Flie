@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="{{ url_for('static',filename='style/index.css') }}" rel="stylesheet" type="text/css" />
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="{{ url_for('static',filename='script.js') }}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+
+    <title>주문확인</title>
+</head>
+<body>
+    <div id="table_box">
+        <table class="table" id="in_table">
+            <thead>
+                <th>No</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Address</th>
+                <th>Tel</th>
+            </thead>
+
+            <tbody>
+                <th scope="row">1</th>
+                <td>홍길동</td>
+                <td>2</td>
+                <td>서울 강남구 대치동</td>
+                <td>010-0000-000</td>
+            </tbody>
+
+        </table>
+    </div>
+</body>
+</html>

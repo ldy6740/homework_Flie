@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>쇼핑몰</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<!--bx slider, css, js file-->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+ <script src="{{ url_for('static',filename='script.js') }}"></script>
+
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Didact+Gothic"  />
+<link href="{{ url_for('static',filename='style/index.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ url_for('static',filename='style/fonts.css') }}" rel="stylesheet" type="text/css"  />
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+<div id="header-wrapper">
+
+
+	<div class="slider">
+		<div class="bg_img1 bg_position"><img src="{{ url_for('static',filename='images/header-bg.jpg') }}"></div>
+		<div class="bg_img2 bg_position"><img src="{{ url_for('static',filename='images/header-bg.jpg') }}"></div>
+		<div class="bg_img3 bg_position"><img src="{{ url_for('static',filename='images/header-bg.jpg') }}"></div>
+	</div>
+
+	<script type="text/javascript">
+
+	    $(document).ready(function(){
+	      $('.slider').bxSlider({
+	      	pager: false,
+	      	controls: false,
+	      	auto:true,
+	      	speed: 2000,
+	      });
+	    });
+
+    </script>
+
+
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">Assembly</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="active"><a href="#" accesskey="1" title="">Homepage</a></li>
+				<li><a href="#" accesskey="2" title="">Our Clients</a></li>
+				<li><a href="#" accesskey="3" title="">About Us</a></li>
+				<li><a href="#" accesskey="4" title="">Careers</a></li>
+				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner" class="container">
+		<div class="title">
+			<h2>Consectetuer adipiscing elit</h2>
+			<span class="byline">Donec pulvinar ullamcorper metus</span>
+		</div>
+		<ul class="actions">
+			<li><a href="#" class="button">Pulvinar mollis</a></li>
+		</ul>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="three-column" class="container">
+		<div class="title">
+			<h2>Best item</h2>
+			<span class="byline">Try the best product</span>
+		</div>
+		<div class="boxA box_img_control">
+			<div class="img_overflow">
+				<a href="/subpage"><p></p></a>
+			</div>
+			<!-- <a href="#" class="button button-alt">More</a> -->
+		</div>
+		<div class="boxB box_img_control">
+			<div class="img_overflow">
+				<a href="subpage.html"><p></p></a>
+			</div>
+			<!-- <a href="#" class="button button-alt">More</a> -->
+		</div>
+		<div class="boxC box_img_control">
+			<div class="img_overflow">
+				<a href="subpage.html"><p></p></a>
+			</div>
+			<!-- <a href="#" class="button button-alt">More</a> -->
+		</div>
+	</div>
+</div>
+<div id="welcome">
+	<div class="container">
+		<div class="title">
+			<h2>Fusce ultrices fringilla metus</h2>
+			<span class="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</span>
+		</div>
+		<p>This is <strong>Assembly</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
+		<ul class="actions">
+			<li><a href="#" class="button">Etiam posuere</a></li>
+		</ul>
+	</div>
+</div>
+<div id="copyright" class="container">
+	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
+</body>
+</html>
